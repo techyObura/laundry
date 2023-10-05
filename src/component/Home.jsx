@@ -66,7 +66,11 @@ const Home = ({ width, active, up }) => {
       {/* Hero Section */}
       <div
         className="w-full mb-6 "
-        style={show ? { fontFamily: "Roboto" } : { fontFamily: "Roboto" }}
+        style={
+          show
+            ? { fontFamily: "Roboto", opacity: 0.5 }
+            : { fontFamily: "Roboto" }
+        }
       >
         <div className="flex justify-center items-center w-full">
           <div className="">
@@ -130,7 +134,7 @@ const Home = ({ width, active, up }) => {
       {/* Step by Step */}
       <div
         className="w-full bg-blue-400 pt-4 mb-5"
-        style={width < 750 ? {} : {}}
+        style={width < 750 && show ? { opacity: 0.5 } : {}}
       >
         <div className="w-full " style={width < 750 ? {} : {}}>
           <p className="text-orange-600 uppercase font-bold text-3xl text-center">
@@ -212,7 +216,10 @@ const Home = ({ width, active, up }) => {
       </div>
 
       {/* Simon Services */}
-      <div className="w-full mt-6" style={width < 750 ? {} : {}}>
+      <div
+        className="w-full mt-6"
+        style={width < 750 && show ? { opacity: 0.5 } : {}}
+      >
         <div className="w-full">
           <h4 className="text-center text-blue-400 text-4xl font-bold">
             Simon&quot;s Services
