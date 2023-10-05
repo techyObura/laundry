@@ -87,19 +87,19 @@ const Home = () => {
       </div>
 
       {/* Step by Step */}
-      <div className="w-full bg-blue-400 pt-4" style={{ height: "210vh" }}>
+      <div className="w-full bg-blue-400 pt-4" style={{ height: "200vh" }}>
         <div className="w-full ">
-          <p className="text-red-600 uppercase font-bold text-3xl text-center">
+          <p className="text-orange-600 uppercase font-bold text-3xl text-center">
             step <span className="text-white">by</span> step
           </p>
           <div className="w-3/4 mt-16 m-auto">
             <div
               className=" bg-white w-full flex justify-center items-center m-auto rounded-xl mb-6"
-              style={{ width: "90%", height: "306px" }}
+              style={{ width: "196px", height: "206px" }}
             >
               <div
                 className="flex w-full justify-center items-center bg-blue-400 rounded-xl"
-                style={{ width: "89%", height: "302px" }}
+                style={{ width: "190", height: "200px" }}
               >
                 <img
                   src={Click}
@@ -108,7 +108,7 @@ const Home = () => {
                 />
               </div>
             </div>
-            <h6 className="uppercase text-red-600 text-xl font-semibold text-center">
+            <h6 className="uppercase text-orange-600 text-xl font-semibold text-center">
               place your first order
             </h6>
             <p className="text-white font-semibold text-xl text-center">
@@ -131,7 +131,7 @@ const Home = () => {
                 />
               </div>
             </div>
-            <h6 className="uppercase text-red-600 text-xl font-semibold text-center">
+            <h6 className="uppercase text-orange-600 text-xl font-semibold text-center">
               our commitment
             </h6>
             <p className="text-white font-semibold text-xl text-center">
