@@ -18,19 +18,26 @@ import DryClean from "../assets/images/dryClean.jpg";
 import Folded from "../assets/images/folded.jpg";
 import { TypeAnimation } from "react-type-animation";
 
-const Home = () => {
+const Home = ({ width, active }) => {
   return (
     <div className="w-full">
       {/* Header Section */}
-      <div className="mt-4 flex justify-between items-center">
-        <div className="w-full flex items-center ">
-          <div className="w-16 h-11 mt">
+      <div
+        className="mt-4 flex justify-between items-center"
+        style={width > 750 ? {} : {}}
+      >
+        <div className="w-full flex items-center " id="top">
+          <div className="w-16 h-11 mt" style={width > 750 ? {} : {}}>
             <img src={Logo} alt="Simon laundry" className="w-full h-full" />
           </div>
           <div>
             <h1
               className="font-bold text-xl text-orange-600"
-              style={{ fontFamily: "ABeeZee" }}
+              style={
+                width > 750
+                  ? { fontFamily: "ABeeZee" }
+                  : { fontFamily: "ABeeZee" }
+              }
             >
               Simon Laundry
             </h1>
@@ -49,7 +56,7 @@ const Home = () => {
         <div className="flex justify-center items-center w-full">
           <div className="">
             <h3 className="text-blue-400 font-semibold text-center text-4xl">
-              Laundry & Dry Cleaning
+              Laundry & Dry Cleaning {width}
             </h3>
             <h3 className="text-blue-400 font-semibold text-center text-4xl">
               Delivery Service
@@ -57,7 +64,7 @@ const Home = () => {
             <h4 className="text-center text-orange-600 font-semibold mt-1 mb-2">
               Effortless Scheduling, Save Time & Money
             </h4>
-            <div className="w-11/12">
+            <div className="w-11/12" style={width > 750 ? {} : {}}>
               <p
                 className="text-center tracking-wide text-md text-blue-400 font-semibold w-full whitespace-nowrap"
                 style={{ fontFamily: "Chelsea Market" }}
@@ -106,19 +113,22 @@ const Home = () => {
       </div>
 
       {/* Step by Step */}
-      <div className="w-full bg-blue-400 pt-4 mb-5">
-        <div className="w-full ">
+      <div
+        className="w-full bg-blue-400 pt-4 mb-5"
+        style={width > 750 ? {} : {}}
+      >
+        <div className="w-full " style={width > 750 ? {} : {}}>
           <p className="text-orange-600 uppercase font-bold text-3xl text-center">
             step <span className="text-white">by</span> step
           </p>
-          <div className="w-3/4 mt-16 m-auto">
+          <div className="w-3/4 mt-16 m-auto" style={width > 750 ? {} : {}}>
             <div
               className=" bg-white w-full flex justify-center items-center m-auto rounded-xl mb-6"
-              style={{ width: "196px", height: "206px" }}
+              style={width > 750 ? {} : { width: "196px", height: "206px" }}
             >
               <div
                 className="flex w-full justify-center items-center bg-blue-400 rounded-xl"
-                style={{ width: "190", height: "200px" }}
+                style={width > 750 ? {} : { width: "190", height: "200px" }}
               >
                 <img
                   src={Click}
@@ -134,14 +144,14 @@ const Home = () => {
               To place your order, just tap on &quot;Order Now&quot; button{" "}
             </p>
           </div>
-          <div className="w-3/4 mt-16 m-auto">
+          <div className="w-3/4 mt-16 m-auto" style={width > 750 ? {} : {}}>
             <div
               className=" bg-white w-full flex justify-center items-center m-auto rounded-xl mb-6"
-              style={{ width: "196px", height: "206px" }}
+              style={width > 750 ? {} : { width: "196px", height: "206px" }}
             >
               <div
                 className="flex w-full justify-center items-center bg-blue-400 rounded-xl"
-                style={{ width: "190px", height: "200px" }}
+                style={width > 750 ? {} : { width: "190px", height: "200px" }}
               >
                 <img
                   src={Laundry9}
@@ -161,11 +171,11 @@ const Home = () => {
           <div className="w-3/4 mt-16 m-auto">
             <div
               className=" bg-white w-full flex justify-center items-center m-auto rounded-xl mb-6"
-              style={{ width: "196px", height: "206px" }}
+              style={width > 750 ? {} : { width: "196px", height: "206px" }}
             >
               <div
                 className="flex w-full justify-center items-center bg-blue-400 rounded-xl"
-                style={{ width: "190px", height: "200px" }}
+                style={width > 750 ? {} : { width: "190px", height: "200px" }}
               >
                 <img
                   src={Laundry10}
@@ -225,7 +235,7 @@ const Home = () => {
           </div>
           {/* End of Item 1 */}
           {/* Item 2 */}
-          <div className=" w-11/12 m-auto mb-8">
+          <div className=" w-11/12 m-auto mb-8" style={width > 750 ? {} : {}}>
             <div className="w-32 h-32 rounded-full mb-9 bg-orange-600 m-auto relative">
               <div
                 className="w-36 h-36 rounded-full absolute"
@@ -323,6 +333,17 @@ const Home = () => {
       </a>
 
       {/* scroll top button */}
+      {width < 750 && active && (
+        <a
+          href="#top"
+          className="fixed bottom-36 right-5 w-12 h-12 rounded-full bg-orange-600 flex justify-center items-center"
+          style={{ opacity: "0.5" }}
+        >
+          <ExpandLessIcon
+            style={{ width: "38px", height: "38px", color: "white" }}
+          />
+        </a>
+      )}
       <div></div>
     </div>
   );
