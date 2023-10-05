@@ -43,31 +43,33 @@ const Home = () => {
       {/* Hero Section */}
       <div className="w-full mt-8 mb-6" style={{ fontFamily: "Roboto" }}>
         <div className="flex justify-center items-center w-full">
-          <div className="w-4/5">
-            <h3 className="text-blue-400 font-semibold text-center text-3xl">
+          <div className="">
+            <h3 className="text-blue-400 font-semibold text-center text-4xl">
               Laundry & Dry Cleaning
             </h3>
-            <h3 className="text-blue-400 font-semibold text-center text-3xl">
+            <h3 className="text-blue-400 font-semibold text-center text-4xl">
               Delivery Service
             </h3>
             <h4 className="text-center text-orange-600 font-semibold mt-1 mb-2">
               Effortless Scheduling, Save Time & Money
             </h4>
-            <p
-              className="text-center tracking-wide text-md text-blue-400 font-semibold"
-              style={{ fontFamily: "Chelsea Market" }}
-            >
-              We pick up, clean and deliver your laundry
-            </p>
-            <p
-              className="text-center tracking-wider text-md font-semibold text-blue-400"
-              style={{ fontFamily: "Chelsea Market" }}
-            >
-              and dry cleaning clothes{" "}
-              <span className="uppercase text-lg text-orange-600 font-semibold">
-                free delivery!
-              </span>
-            </p>
+            <div className="w-7/8">
+              <p
+                className="text-center tracking-wide text-md text-blue-400 font-semibold"
+                style={{ fontFamily: "Chelsea Market" }}
+              >
+                We pick up, clean and deliver your laundry
+              </p>
+              <p
+                className="text-center tracking-wider text-md font-semibold text-blue-400"
+                style={{ fontFamily: "Chelsea Market" }}
+              >
+                and dry cleaning clothes{" "}
+                <span className="uppercase text-lg text-orange-600 font-semibold">
+                  free delivery!
+                </span>
+              </p>
+            </div>
           </div>
         </div>
         <div className="w-full justify-center items-center flex mt-8">
