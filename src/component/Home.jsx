@@ -16,6 +16,7 @@ import Laundry10 from "../assets/images/laundry10.jpg";
 import Bed from "../assets/images/bed.jpg";
 import DryClean from "../assets/images/dryClean.jpg";
 import Folded from "../assets/images/folded.jpg";
+import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
   return (
@@ -78,7 +79,20 @@ const Home = () => {
         <div className="w-full justify-center items-center flex mt-8">
           <a href="https://wa.me/723691214">
             <button className="bg-orange-600 text-white w-56 h-12 rounded-lg text-2xl font-semibold hover:bg-orange-500">
-              Contact Now
+              <TypeAnimation
+                sequence={[
+                  "Call 0723691214",
+                  60000,
+                  "Contact Now",
+                  30000,
+                  "Call 0723691214",
+                  60000,
+                  "Contact Now",
+                  30000,
+                ]}
+                speed={300}
+                repeat={Infinity}
+              />
             </button>
           </a>
         </div>
