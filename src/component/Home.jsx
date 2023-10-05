@@ -81,17 +81,19 @@ const Home = () => {
             <button className="bg-orange-600 text-white w-56 h-12 rounded-lg text-2xl font-semibold hover:bg-orange-500">
               <TypeAnimation
                 sequence={[
-                  "Call 0723691214",
-                  60000,
                   "Contact Now",
+                  20000,
+                  "Call 0723691214",
                   30000,
                   "Call 0723691214",
                   60000,
                   "Contact Now",
-                  30000,
+                  60000,
                 ]}
                 speed={300}
                 repeat={Infinity}
+                omitDeletionAnimation={true}
+                preRenderFirstString={true}
               />
             </button>
           </a>
