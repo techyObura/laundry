@@ -176,7 +176,7 @@ const Home = () => {
           </h4>
         </div>
         {/* Item 1 */}
-        <div className="mt-16 w-3/4 m-auto">
+        <div className="mt-16 w-5/6 m-auto">
           <div className="w-40 h-40 rounded-full mb-9 bg-orange-600 m-auto relative">
             <div
               className="w-36 h-36 rounded-full absolute"
@@ -189,7 +189,7 @@ const Home = () => {
               />
             </div>
           </div>
-          <div className="w-1/2 m-auto mb-3">
+          <div className="w-3/4 m-auto mb-3">
             <h4 className="text-center text-orange-600 font-bold text-3xl">
               Dry Cleaning Service
             </h4>
