@@ -13,7 +13,9 @@ import Click from "../assets/images/click.jpg";
 import Truck from "../assets/images/truck.jpg";
 import Laundry9 from "../assets/images/laundry9.jpg";
 import Laundry10 from "../assets/images/laundry10.jpg";
-import Laundry12 from "../assets/images/laundry12.jpg";
+import Bed from "../assets/images/bed.jpg";
+import DryClean from "../assets/images/dryClean.jpg";
+import Folded from "../assets/images/folded.jpg";
 
 const Home = () => {
   return (
@@ -88,7 +90,7 @@ const Home = () => {
       </div>
 
       {/* Step by Step */}
-      <div className="w-full bg-blue-400 pt-4" style={{ height: "190vh" }}>
+      <div className="w-full bg-blue-400 pt-4 mb-5">
         <div className="w-full ">
           <p className="text-orange-600 uppercase font-bold text-3xl text-center">
             step <span className="text-white">by</span> step
@@ -175,36 +177,101 @@ const Home = () => {
             Simon&quot;s Services
           </h4>
         </div>
-        {/* Item 1 */}
-        <div className="mt-16 w-5/6 m-auto">
-          <div className="w-40 h-40 rounded-full mb-9 bg-orange-600 m-auto relative">
-            <div
-              className="w-36 h-36 rounded-full absolute"
-              style={{ position: "absolute", right: "-20px", top: "10px" }}
-            >
-              <img
-                src={Laundry12}
-                alt="Simon Laundry"
-                className="w-full h-full rounded-full"
-              />
+        <div className="mt-16">
+          {/* Item 1 */}
+          <div className="w-5/6 m-auto mb-8">
+            <div className="w-36 h-36 rounded-full mb-9 bg-orange-600 m-auto relative">
+              <div
+                className="w-36 h-36 rounded-full absolute"
+                style={{ position: "absolute", right: "-10px", top: "10px" }}
+              >
+                <img
+                  src={DryClean}
+                  alt="Simon Laundry"
+                  className="w-full h-full rounded-full"
+                />
+              </div>
             </div>
+            <div className="w-5/6 m-auto mb-3">
+              <h4 className="text-center text-orange-600 font-bold text-3xl">
+                Dry Cleaning Service
+              </h4>
+            </div>
+            <p className="text-center text-xl text-slate-600">
+              Try our high-quality dry cleaner
+            </p>
+            <p className="text-center text-xl text-slate-600">
+              service. We do it for you and expect clean
+            </p>
+            <p className="text-center text-xl text-slate-600">
+              pressed and hanged clothes
+            </p>
           </div>
-          <div className="w-3/4 m-auto mb-3">
-            <h4 className="text-center text-orange-600 font-bold text-3xl">
-              Dry Cleaning Service
-            </h4>
+          {/* End of Item 1 */}
+          {/* Item 2 */}
+          <div className=" w-5/6 m-auto mb-8">
+            <div className="w-32 h-32 rounded-full mb-9 bg-orange-600 m-auto relative">
+              <div
+                className="w-36 h-36 rounded-full absolute"
+                style={{ position: "absolute", right: "-20px", top: "10px" }}
+              >
+                <img
+                  src={Folded}
+                  alt="Simon Laundry"
+                  className="w-full h-full rounded-full"
+                />
+              </div>
+            </div>
+            <div className="w-5/6 m-auto mb-3">
+              <h4 className="text-center text-orange-600 font-bold text-3xl">
+                Laundry Service
+              </h4>
+            </div>
+            <p className="text-center text-xl text-slate-600">
+              You can direct us to wash and fold
+            </p>
+            <p className="text-center text-xl text-slate-600">
+              your clothes and expect fresh, clean as never
+            </p>
+            <p className="text-center text-xl text-slate-600">
+              before and perfectly folded clothes.
+            </p>
           </div>
-          <p className="text-center text-lg text-slate-600">
-            Try our high-quality dry cleaner
-          </p>
-          <p className="text-center text-lg text-slate-600">
-            service. We do it for you and expect clean
-          </p>
-          <p className="text-center text-lg text-slate-600">
-            pressed and hanged clothes
-          </p>
+          {/* End of Item 2 */}
+          {/* Item 3 */}
+          <div className="w-11/12 m-auto mb-8">
+            <div className="w-40 h-40 rounded-full mb-9 bg-orange-600 m-auto relative">
+              <div
+                className="w-36 h-36 rounded-full absolute"
+                style={{ position: "absolute", right: "-20px", top: "10px" }}
+              >
+                <img
+                  src={Bed}
+                  alt="Simon Laundry"
+                  className="w-full h-full rounded-full"
+                />
+              </div>
+            </div>
+            <div className="w-11/12 m-auto mb-3 w">
+              <h4 className="text-center text-orange-600 font-bold text-3xl">
+                Commercial Laundry Service
+              </h4>
+            </div>
+            <p className="text-center text-xl text-slate-600">
+              Partner your business with us for
+            </p>
+            <p className="text-center text-xl text-slate-600">
+              on-demand professional laundry service. Your
+            </p>
+            <p className="text-center text-xl text-slate-600">
+              hotel needs the highest quality laundry service
+            </p>
+            <p className="text-center text-xl text-slate-600">
+              which we provide strictly as required by standards.
+            </p>
+          </div>
+          {/* End of Item 3 */}
         </div>
-        {/* End of Item 1 */}
       </div>
 
       {/* Benefits */}
