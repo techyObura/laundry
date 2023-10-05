@@ -179,7 +179,7 @@ const Home = () => {
         </div>
         <div className="mt-16">
           {/* Item 1 */}
-          <div className="w-5/6 m-auto mb-8">
+          <div className="w-11/12 m-auto mb-8">
             <div className="w-36 h-36 rounded-full mb-9 bg-orange-600 m-auto relative">
               <div
                 className="w-36 h-36 rounded-full absolute"
@@ -209,7 +209,7 @@ const Home = () => {
           </div>
           {/* End of Item 1 */}
           {/* Item 2 */}
-          <div className=" w-5/6 m-auto mb-8">
+          <div className=" w-11/12 m-auto mb-8">
             <div className="w-32 h-32 rounded-full mb-9 bg-orange-600 m-auto relative">
               <div
                 className="w-36 h-36 rounded-full absolute"
