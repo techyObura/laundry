@@ -84,13 +84,13 @@ const Home = () => {
                   "Contact Now",
                   20000,
                   "Call 0723691214",
-                  30000,
-                  "Call 0723691214",
-                  60000,
+                  20000,
                   "Contact Now",
                   60000,
+                  "Call 0723691214",
+                  60000,
                 ]}
-                speed={300}
+                speed={400}
                 repeat={Infinity}
                 omitDeletionAnimation={true}
                 preRenderFirstString={true}
