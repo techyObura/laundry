@@ -95,11 +95,11 @@ const Home = () => {
           <div className="w-3/4 mt-16 m-auto">
             <div
               className=" bg-white w-full flex justify-center items-center m-auto rounded-xl mb-6"
-              style={{ width: "196px", height: "206px" }}
+              style={{ width: "90%", height: "306px" }}
             >
               <div
                 className="flex w-full justify-center items-center bg-blue-400 rounded-xl"
-                style={{ width: "190px", height: "200px" }}
+                style={{ width: "89%", height: "302px" }}
               >
                 <img
                   src={Click}
