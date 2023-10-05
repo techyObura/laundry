@@ -261,13 +261,14 @@ const Home = () => {
               Partner your business with us for
             </p>
             <p className="text-center text-xl text-slate-600">
-              on-demand professional laundry service. Your
+              on-demand professional laundry service.
             </p>
             <p className="text-center text-xl text-slate-600">
-              hotel needs the highest quality laundry service
+              Your hotel needs the highest quality
             </p>
             <p className="text-center text-xl text-slate-600">
-              which we provide strictly as required by standards.
+              laundry service which we provide strictly as required by
+              standards.
             </p>
           </div>
           {/* End of Item 3 */}
