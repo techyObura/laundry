@@ -78,7 +78,7 @@ const Home = () => {
         <div className="w-full justify-center items-center flex mt-8">
           <a href="https://wa.me/723691214">
             <button className="bg-orange-600 text-white w-56 h-12 rounded-lg text-2xl font-semibold hover:bg-orange-500">
-              Contact No
+              Contact Now
             </button>
           </a>
         </div>
