@@ -56,15 +56,15 @@ const Home = () => {
             <h4 className="text-center text-orange-600 font-semibold mt-1 mb-2">
               Effortless Scheduling, Save Time & Money
             </h4>
-            <div className="w-7/8">
+            <div className="w-11/12">
               <p
-                className="text-center tracking-wide text-md text-blue-400 font-semibold"
+                className="text-center tracking-wide text-md text-blue-400 font-semibold w-full whitespace-nowrap"
                 style={{ fontFamily: "Chelsea Market" }}
               >
                 We pick up, clean and deliver your laundry
               </p>
               <p
-                className="text-center tracking-wider text-md font-semibold text-blue-400"
+                className="text-center tracking-wider text-md font-semibold text-blue-400 whitespace-nowrap"
                 style={{ fontFamily: "Chelsea Market" }}
               >
                 and dry cleaning clothes{" "}
@@ -76,9 +76,9 @@ const Home = () => {
           </div>
         </div>
         <div className="w-full justify-center items-center flex mt-8">
-          <a href="t">
+          <a href="https://wa.me/723691214">
             <button className="bg-orange-600 text-white w-56 h-12 rounded-lg text-2xl font-semibold hover:bg-orange-500">
-              Order Now
+              Contact No
             </button>
           </a>
         </div>
@@ -204,7 +204,7 @@ const Home = () => {
               service. We do it for you and expect clean
             </p>
             <p className="text-center text-xl text-slate-600">
-              pressed and hanged clothes
+              pressed and hanged clothes.
             </p>
           </div>
           {/* End of Item 1 */}
@@ -267,7 +267,7 @@ const Home = () => {
               Your hotel needs the highest quality
             </p>
             <p className="text-center text-xl text-slate-600">
-              laundry service which we provide strictly as required by
+              laundry service, which we provide strictly as required by
               standards.
             </p>
           </div>
@@ -297,7 +297,14 @@ const Home = () => {
       <div></div>
 
       {/* message button */}
-      <div></div>
+      <a
+        href="https://wa.me/723691214"
+        className="fixed bottom-10 right-5 w-12 h-12 rounded-full bg-blue-500 flex justify-center items-center"
+      >
+        <div className="text-white flex justify-center items-center">
+          <WhatsAppIcon style={{ width: "38px", height: "38px" }} />
+        </div>
+      </a>
 
       {/* scroll top button */}
       <div></div>
