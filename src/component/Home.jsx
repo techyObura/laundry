@@ -231,10 +231,10 @@ const Home = () => {
               You can direct us to wash and fold
             </p>
             <p className="text-center text-xl text-slate-600">
-              your clothes and expect fresh, clean as never
+              your clothes and expect fresh, clean as
             </p>
             <p className="text-center text-xl text-slate-600">
-              before and perfectly folded clothes.
+              never before and perfectly folded clothes.
             </p>
           </div>
           {/* End of Item 2 */}
