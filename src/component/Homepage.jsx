@@ -29,9 +29,11 @@ const Homepage = () => {
   const { width, height } = screenSize;
 
   const [activeB, setActiveB] = useState(false);
+  const [up, setUp] = useState(false);
 
   const isActive = () => {
     window.scrollY > 350 ? setActiveB(true) : setActiveB(false);
+    window.scrollY > 350 ? setUp(true) : setActiveB(false);
   };
   useEffect(() => {
     window.addEventListener("scroll", isActive);
@@ -43,7 +45,7 @@ const Homepage = () => {
 
   return (
     <div>
-      <Home height={height} width={width} active={activeB} />
+      <Home height={height} width={width} active={activeB} up={up} />
     </div>
   );
 };

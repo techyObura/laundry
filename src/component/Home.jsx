@@ -17,46 +17,61 @@ import Bed from "../assets/images/bed.jpg";
 import DryClean from "../assets/images/dryClean.jpg";
 import Folded from "../assets/images/folded.jpg";
 import { TypeAnimation } from "react-type-animation";
+import CloseIcon from "@mui/icons-material/Close";
+import { useEffect, useState } from "react";
 
-const Home = ({ width, active }) => {
+const Home = ({ width, active, up }) => {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShow(true);
+    }, 10000);
+  }, [setShow]);
+
   return (
     <div className="w-full">
       {/* Header Section */}
-      <div
-        className="mt-4 flex justify-between items-center"
-        style={width > 750 ? {} : {}}
-      >
-        <div className="w-full flex items-center " id="top">
-          <div className="w-16 h-11 mt" style={width > 750 ? {} : {}}>
-            <img src={Logo} alt="Simon laundry" className="w-full h-full" />
+      <div className="mt-4 w-full mb-6 " id="top">
+        <div
+          className=" w-full flex justify-between items-center"
+          style={width < 750 ? {} : {}}
+        >
+          <div className="w-full flex items-center ">
+            <div className="w-16 h-11 " style={width > 750 ? {} : {}}>
+              <img src={Logo} alt="Simon laundry" className="w-full h-full" />
+            </div>
+            <div>
+              <h1
+                className="font-bold text-xl text-orange-600"
+                style={
+                  width < 750
+                    ? { fontFamily: "ABeeZee" }
+                    : { fontFamily: "ABeeZee" }
+                }
+              >
+                Simon Laundry
+              </h1>
+            </div>
           </div>
-          <div>
-            <h1
-              className="font-bold text-xl text-orange-600"
-              style={
-                width > 750
-                  ? { fontFamily: "ABeeZee" }
-                  : { fontFamily: "ABeeZee" }
-              }
-            >
-              Simon Laundry
-            </h1>
+          <div className="pr-4 ">
+            <LibraryAddCheckIcon
+              className="text-blue-400"
+              style={{ width: "40px", height: "40px" }}
+            />
           </div>
-        </div>
-        <div className="pr-4">
-          <LibraryAddCheckIcon
-            className="text-blue-400"
-            style={{ width: "40px", height: "40px" }}
-          />
         </div>
       </div>
 
       {/* Hero Section */}
-      <div className="w-full mt-8 mb-6" style={{ fontFamily: "Roboto" }}>
+      <div
+        className="w-full mb-6 "
+        style={show ? { fontFamily: "Roboto" } : { fontFamily: "Roboto" }}
+      >
         <div className="flex justify-center items-center w-full">
           <div className="">
             <h3 className="text-blue-400 font-semibold text-center text-4xl">
-              Laundry & Dry Cleaning {width}
+              Laundry & Dry Cleaning
             </h3>
             <h3 className="text-blue-400 font-semibold text-center text-4xl">
               Delivery Service
@@ -64,7 +79,7 @@ const Home = ({ width, active }) => {
             <h4 className="text-center text-orange-600 font-semibold mt-1 mb-2">
               Effortless Scheduling, Save Time & Money
             </h4>
-            <div className="w-11/12" style={width > 750 ? {} : {}}>
+            <div className="w-11/12" style={width < 750 ? {} : {}}>
               <p
                 className="text-center tracking-wide text-md text-blue-400 font-semibold w-full whitespace-nowrap"
                 style={{ fontFamily: "Chelsea Market" }}
@@ -115,13 +130,13 @@ const Home = ({ width, active }) => {
       {/* Step by Step */}
       <div
         className="w-full bg-blue-400 pt-4 mb-5"
-        style={width > 750 ? {} : {}}
+        style={width < 750 ? {} : {}}
       >
-        <div className="w-full " style={width > 750 ? {} : {}}>
+        <div className="w-full " style={width < 750 ? {} : {}}>
           <p className="text-orange-600 uppercase font-bold text-3xl text-center">
             step <span className="text-white">by</span> step
           </p>
-          <div className="w-3/4 mt-16 m-auto" style={width > 750 ? {} : {}}>
+          <div className="w-3/4 mt-16 m-auto" style={width < 750 ? {} : {}}>
             <div
               className=" bg-white w-full flex justify-center items-center m-auto rounded-xl mb-6"
               style={width > 750 ? {} : { width: "196px", height: "206px" }}
@@ -144,7 +159,7 @@ const Home = ({ width, active }) => {
               To place your order, just tap on &quot;Order Now&quot; button{" "}
             </p>
           </div>
-          <div className="w-3/4 mt-16 m-auto" style={width > 750 ? {} : {}}>
+          <div className="w-3/4 mt-16 m-auto" style={width < 750 ? {} : {}}>
             <div
               className=" bg-white w-full flex justify-center items-center m-auto rounded-xl mb-6"
               style={width > 750 ? {} : { width: "196px", height: "206px" }}
@@ -171,11 +186,11 @@ const Home = ({ width, active }) => {
           <div className="w-3/4 mt-16 m-auto">
             <div
               className=" bg-white w-full flex justify-center items-center m-auto rounded-xl mb-6"
-              style={width > 750 ? {} : { width: "196px", height: "206px" }}
+              style={width < 750 ? { width: "196px", height: "206px" } : {}}
             >
               <div
                 className="flex w-full justify-center items-center bg-blue-400 rounded-xl"
-                style={width > 750 ? {} : { width: "190px", height: "200px" }}
+                style={width < 750 ? { width: "190px", height: "200px" } : {}}
               >
                 <img
                   src={Laundry10}
@@ -197,7 +212,7 @@ const Home = ({ width, active }) => {
       </div>
 
       {/* Simon Services */}
-      <div className="w-full mt-6">
+      <div className="w-full mt-6" style={width < 750 ? {} : {}}>
         <div className="w-full">
           <h4 className="text-center text-blue-400 text-4xl font-bold">
             Simon&quot;s Services
@@ -310,6 +325,43 @@ const Home = ({ width, active }) => {
       {/* Just subscribe */}
       <div></div>
 
+      {/* Modal */}
+
+      {show && (
+        <div
+          className=" h-12 fixed  right-16 top-4 flex justify-center items-center rounded-xl"
+          style={{ width: "200px", background: "rgba(192,192,192,0.3)" }}
+        >
+          <div
+            className="flex justify-center items-center h-12 rounded-lg"
+            style={{ width: "200px", background: "rgba(128,128,128,0.1)" }}
+          >
+            <div className="h-full w-full relative flex justify-center items-center rounded-xl">
+              <div
+                className="absolute top-0 right-0 cursor-pointer"
+                onClick={() => setShow(false)}
+              >
+                <CloseIcon style={{ width: "15px", height: "15px" }} />
+              </div>
+              <div>
+                <p className="text-2xl uppercase">
+                  45% <span className="">off</span>
+                </p>
+                <p className="text-green-600 font-bold">
+                  <TypeAnimation
+                    sequence={["Call 0723691214", 100000]}
+                    speed={400}
+                    repeat={1}
+                    omitDeletionAnimation={true}
+                    preRenderFirstString={true}
+                  />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Refer a friend */}
 
       <div></div>
@@ -333,7 +385,7 @@ const Home = ({ width, active }) => {
       </a>
 
       {/* scroll top button */}
-      {width < 750 && active && (
+      {width < 750 && active && !show && (
         <a
           href="#top"
           className="fixed bottom-36 right-5 w-12 h-12 rounded-full bg-orange-600 flex justify-center items-center"
