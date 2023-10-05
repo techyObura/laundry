@@ -13,6 +13,7 @@ import Click from "../assets/images/click.jpg";
 import Truck from "../assets/images/truck.jpg";
 import Laundry9 from "../assets/images/laundry9.jpg";
 import Laundry10 from "../assets/images/laundry10.jpg";
+import Laundry12 from "../assets/images/laundry12.jpg";
 
 const Home = () => {
   return (
@@ -87,7 +88,7 @@ const Home = () => {
       </div>
 
       {/* Step by Step */}
-      <div className="w-full bg-blue-400 pt-4" style={{ height: "200vh" }}>
+      <div className="w-full bg-blue-400 pt-4" style={{ height: "190vh" }}>
         <div className="w-full ">
           <p className="text-orange-600 uppercase font-bold text-3xl text-center">
             step <span className="text-white">by</span> step
@@ -155,7 +156,7 @@ const Home = () => {
                 />
               </div>
             </div>
-            <h6 className="uppercase text-red-600 text-xl font-semibold text-center">
+            <h6 className="uppercase text-orange-600 text-xl font-semibold text-center">
               enjoy your fresh clothes
             </h6>
             <p className="text-white font-semibold text-xl text-center">
@@ -168,7 +169,43 @@ const Home = () => {
       </div>
 
       {/* Simon Services */}
-      <div></div>
+      <div className="w-full mt-6">
+        <div className="w-full">
+          <h4 className="text-center text-blue-400 text-4xl font-bold">
+            Simon&quot;s Services
+          </h4>
+        </div>
+        {/* Item 1 */}
+        <div className="mt-16 w-3/4 m-auto">
+          <div className="w-40 h-40 rounded-full mb-9 bg-orange-600 m-auto relative">
+            <div
+              className="w-36 h-36 rounded-full absolute"
+              style={{ position: "absolute", right: "-20px", top: "10px" }}
+            >
+              <img
+                src={Laundry12}
+                alt="Simon Laundry"
+                className="w-full h-full rounded-full"
+              />
+            </div>
+          </div>
+          <div className="w-1/2 m-auto mb-3">
+            <h4 className="text-center text-orange-600 font-bold text-3xl">
+              Dry Cleaning Service
+            </h4>
+          </div>
+          <p className="text-center text-lg text-slate-600">
+            Try our high-quality dry cleaner
+          </p>
+          <p className="text-center text-lg text-slate-600">
+            service. We do it for you and expect clean
+          </p>
+          <p className="text-center text-lg text-slate-600">
+            pressed and hanged clothes
+          </p>
+        </div>
+        {/* End of Item 1 */}
+      </div>
 
       {/* Benefits */}
       <div></div>
